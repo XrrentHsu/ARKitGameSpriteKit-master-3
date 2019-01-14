@@ -59,7 +59,7 @@ class Scene: SKScene {
         let transform = simd_mul(rotation, translation)
         let anchor = ARAnchor(transform: transform)
         sceneView.session.add(anchor: anchor)
-        ghostCount += 1
+        ghostCount += 1 //這邊記數
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
